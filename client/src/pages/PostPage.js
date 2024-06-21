@@ -13,7 +13,7 @@ export default function PostPage() {
         fetch(`http://localhost:4000/post/${id}`).then((res)=>{
             res.json().then((postInfo)=>setPostInfo(postInfo));
         });
-    },[]);
+    },[id]);
 
     if(!postInfo) return '';
 
