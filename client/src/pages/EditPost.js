@@ -20,7 +20,7 @@ export default function EditPost() {
                 setContent(info.content);
             });
         });
-    },[]);
+    },[id]);
 
     async function updatePost(e) {
         e.preventDefault();
